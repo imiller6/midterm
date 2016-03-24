@@ -22,7 +22,7 @@ def playGame():
 
 def askUserChoice():
     while true:
-    	choice = input('Please enter a number between 1 and 4')
+    	choice = int(input('Please enter a number between 1 and 4'))
 	if int(choice) == 1:
 		break
         elif int(choice) == 2:

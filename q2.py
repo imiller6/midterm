@@ -22,16 +22,13 @@ def playGame():
 
 def askUserChoice():
     while true:
-    	choice = int(input('Please enter a number between 1 and 4'))
-	if int(choice) == 1:
-		break
-        elif int(choice) == 2:
-        	break
-        elif int(choice) == 3:
-		break
-        elif int(choice) == 4:
-		break
-    return int(choice)
+    	choice = int(input('How many sticks would you like to pick up? (1-4) :'))
+	if int(choice) > 4 
+        	choice = int(input('Please enter a number between 1 and 4'))
+        elif int(choice) <1:
+        	choice = int(input('Please enter a number between 1 and 4'))
+        else:
+        	return int(choice)
 
 def subtractSticks( number ):
     global sticks 

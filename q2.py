@@ -19,7 +19,6 @@ def playGame():
         if subtractSticks( computerChoice ):
             print('Computer lost!')
             break
-        
 
 def askUserChoice():
     while true:
@@ -34,7 +33,6 @@ def askUserChoice():
 		break
     return int(choice)
 
-
 def subtractSticks( number ):
     global sticks 
     sticks -= number
@@ -42,8 +40,6 @@ def subtractSticks( number ):
     	return True
     else:
         return False
-     
-    
-    
+
 def determineComputerChoice():
     return random.randrage(1,5)
